@@ -63,7 +63,20 @@ No magnets are required.
 - 3D printed tipping bucket
 - Stainless steel shaft
 - PCB target
+- 
+## Schematic Notes
 
+The controller can be built using almost any ESP32 or ESP8266 module.
+
+The LX3302A can provide an analog DAC output up to 5 V, but the ADC input of ESP32/ESP8266 boards is limited to 3.3 V. This must be considered when connecting the sensor output.
+
+There are three possible solutions:
+
+1. Configure the LX3302A DAC output to stay below 3.3 V.
+2. Use a resistive voltage divider between the LX3302A output and the ESP ADC input.
+3. Since the tipping bucket does not rotate through a full 360°, mechanically position the target so the useful output range stays within the ADC range, for example 0.5 V to 2.8 V.
+
+Make sure the analog output never exceeds the maximum ADC input voltage of the microcontroller.
 ---
 
 ## Software

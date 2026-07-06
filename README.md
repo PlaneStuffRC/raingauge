@@ -126,7 +126,7 @@ The bucket volume can be adjusted to achieve the desired resolution (typically 0
 ## Future Improvements
 
 - Automatic self-calibration
-- Temperature compensation
+- Temperature measurements 
 - Wind shield
 - Battery-powered LoRa version
 

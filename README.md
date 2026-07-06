@@ -63,7 +63,7 @@ No magnets are required.
 - 3D printed tipping bucket
 - Stainless steel shaft
 - PCB target
-- 
+  
 ## Schematic Notes
 
 The controller can be built using almost any ESP32 or ESP8266 module.

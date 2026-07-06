@@ -6,7 +6,7 @@ An open-source tipping bucket rain gauge featuring a **Microchip LX3302A inducti
 
 ---
 
-![Rain Gauge](home assistant.png)
+![Rain Gauge](home_assistant.png)
 
 ---
 

@@ -86,10 +86,15 @@ Features include:
 
 The funnel diameter and bucket volume determine the rainfall resolution.
 
-Current prototype:
+Calibration is straightforward and only requires a known volume of water.
 
-- Funnel diameter: 180 mm
-- 100 ml test → 12 bucket tips
+1. Pour a fixed amount of water (for example, 500 mL) into the funnel at a steady rate.
+2. Count the total number of bucket tips (turns).
+3. Repeat the test 10 times and calculate the average number of tips.
+4. Calculate the rainfall per tip using the funnel collection area and the average tip count.
+5. Adjust the bucket if necessary and repeat until the desired resolution (e.g. 0.2 mm per tip) is achieved.
+
+Repeating the test multiple times minimizes measurement errors and ensures consistent calibration across the full tipping range.
 
 The bucket volume can be adjusted to achieve the desired resolution (typically 0.2 mm/tip).
 

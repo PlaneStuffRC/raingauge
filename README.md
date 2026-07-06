@@ -2,7 +2,7 @@
 
 An open-source tipping bucket rain gauge featuring a **Microchip LX3302A inductive position sensor** instead of a traditional reed switch or Hall sensor.
 
-![Rain Gauge](images/rain-gauge.jpg)
+![Rain Gauge](images/rain-gauge.png)
 
 ---
 

@@ -1,4 +1,4 @@
-# DIY Inductive Rain Gauge with Inudctive Possition Sensor
+# DIY Rain Gauge with Inudctive Possition Sensor
 
 An open-source tipping bucket rain gauge featuring a **Microchip LX3302A inductive position sensor** instead of a traditional reed switch or Hall sensor.
 

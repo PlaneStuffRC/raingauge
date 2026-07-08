@@ -138,6 +138,109 @@ The bucket volume can be adjusted to achieve the desired resolution (typically 0
 
 ---
 
+## Calibration
+
+The funnel diameter and bucket volume determine the rainfall resolution.
+
+Calibration is straightforward and only requires a known volume of water.
+
+1. Pour a fixed amount of water (e.g. **500 mL**) into the funnel at a steady rate.
+2. Count the total number of bucket tips.
+3. Repeat the test **10 times** and calculate the average number of tips.
+4. Calculate the rainfall per tip using the funnel collection area and the average tip count.
+5. Adjust the bucket if necessary and repeat until the desired resolution (e.g. **0.2 mm per tip**) is achieved.
+
+Repeating the test multiple times minimizes measurement errors and ensures consistent calibration.
+
+---
+
+## Rainfall Calculation
+
+Rainfall is expressed as the height of a uniform layer of water covering a horizontal surface.
+
+As a reference:
+
+- **1 mm of rainfall = 1 liter of water per square meter (1 L/m²).**
+
+The rain gauge collects water through a funnel with a known collection area. Each time the tipping bucket tips, it empties a fixed volume of water. This volume corresponds to a specific rainfall depth over the funnel area.
+
+The rainfall equivalent of a single bucket tip is:
+
+```text
+mm per Tip = Water Volume per Tip / Funnel Collection Area
+```
+
+where:
+
+- **Water Volume per Tip** = water volume required for one bucket tip
+- **Funnel Collection Area** = area of the funnel opening
+
+Since:
+
+```text
+mm³ / mm² = mm
+```
+
+the result is expressed in **millimeters (mm)**, representing the equivalent rainfall depth.
+
+The total accumulated rainfall is calculated as:
+
+```text
+Rainfall (mm) = Number of Tips × mm per Tip
+```
+
+The **mm per Tip** value is determined during calibration and remains constant unless the bucket geometry or funnel dimensions are changed.
+
+### Calibration Example
+
+Current prototype calibration:
+
+- Funnel diameter: **180 mm**
+- Test volume: **100 mL**
+- Bucket tips: **12**
+
+Funnel collection area:
+
+```text
+A = π × (180 mm / 2)²
+A = 25,447 mm²
+```
+
+Equivalent rainfall:
+
+```text
+100 mL = 100,000 mm³
+
+Rainfall = 100,000 mm³ / 25,447 mm²
+Rainfall = 3.93 mm
+```
+
+Rainfall per bucket tip:
+
+```text
+mm per Tip = 3.93 mm / 12
+mm per Tip = 0.327 mm
+```
+
+Therefore, the firmware uses:
+
+```text
+Rainfall (mm) = Number of Tips × 0.327
+```
+
+Examples:
+
+- 1 tip = **0.327 mm**
+- 10 tips = **3.27 mm**
+- 25 tips = **8.18 mm**
+
+
+
+
+
+
+
+
 ## License
 
 GNU GPL v3
